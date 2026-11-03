@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>식품 상세 문구 적발 사례 대조 리포트</title>
+<meta name="description" content="상세페이지를 올리기 전에, 식약처가 공개한 부당광고 적발 문구 원문과 겹치는 표현을 찾고 바꿔 쓸 문구를 받으세요. 정보 제공 자료이며 법률 자문이 아닙니다.">
+<style>
+  :root {
+    --bg: #fafaf8; --fg: #1a1a1a; --muted: #5c5c5c; --card: #ffffff;
+    --line: #e4e4e0; --accent: #2f5bea; --accent-fg: #ffffff; --warn: #fff7e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121212; --fg: #f0f0ee; --muted: #a8a8a4; --card: #1c1c1c;
+      --line: #2e2e2e; --accent: #6b8cff; --accent-fg: #0b0b0b; --warn: #2a2418;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Segoe UI", sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 16px 80px; }
+  h1 { font-size: clamp(28px, 6vw, 44px); line-height: 1.2; margin: 0 0 16px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); font-size: 19px; margin: 0 0 32px; }
+  form { display: flex; flex-direction: column; gap: 10px; margin: 0 0 12px; }
+  input[type=email], textarea {
+    font: inherit; padding: 14px 16px; border: 1px solid var(--line); border-radius: 10px;
+    background: var(--card); color: var(--fg); width: 100%;
+  }
+  textarea { min-height: 72px; resize: vertical; }
+  label.consent { font-size: 14px; color: var(--muted); display: flex; gap: 8px; align-items: flex-start; }
+  label.consent input { margin-top: 4px; }
+  button, .btn {
+    font: inherit; font-weight: 600; padding: 14px 20px; border: 0; border-radius: 10px;
+    background: var(--accent); color: var(--accent-fg); cursor: pointer; text-align: center; text-decoration: none; display: block;
+  }
+  .btn.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); margin: 0 0 12px; }
+  .fine { color: var(--muted); font-size: 14px; margin: 0 0 48px; }
+  .benefits { display: grid; gap: 12px; margin: 0 0 48px; padding: 0; list-style: none; }
+  .benefits li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  .benefits b { display: block; margin-bottom: 4px; }
+  .price { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 24px; margin: 0 0 48px; }
+  .price table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  .price th, .price td { border-top: 1px solid var(--line); padding: 10px 6px; text-align: left; vertical-align: top; }
+  .price .amount { font-weight: 700; white-space: nowrap; }
+  h2 { font-size: 22px; margin: 0 0 16px; }
+  details { border-top: 1px solid var(--line); padding: 14px 0; }
+  summary { cursor: pointer; font-weight: 600; }
+  .thanks { display: none; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin: 0 0 12px; }
+  .disclaimer { background: var(--warn); border: 1px solid var(--line); border-radius: 12px; padding: 20px; font-size: 14px; margin: 48px 0 0; }
+  .quotes { color: var(--muted); font-size: 15px; margin: 0 0 32px; padding-left: 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>상세페이지 올리기 전, 식약처가 실제로 적발한 문구와 겹치는 곳을 찾아드립니다</h1>
+  <p class="sub">상세 제작 업체는 "과대광고 여부는 직접 점검"하라고 하고, 식약처는 상세페이지 이미지 속 문구까지 읽어 단속합니다. 감으로 고치지 말고, 실제 적발 문구 원문과 한 줄씩 대조해 보세요.</p>
+  <p class="sub" style="font-size:16px;margin-top:-16px">최근 식약처 보도자료에 실린 적발 문구 예:</p>
+  <ul class="quotes">
+    <li>'먹는 위고비', 'GLP-1' (2026-07)</li>
+    <li>'섭취 즉시 몰입력과 에너지를 높여주는~', '#수험생영양제' (2026-10)</li>
+    <li>'감기 예방', '면역력 강화' (2026-06)</li>
+  </ul>
+
+  <form id="signup" action="https://docs.google.com/forms/d/e/1FAIpQLScy3aG6g3bg_hxHGASbv_AxGxnoCNgfSXxqJOXHMLAsseMaRg/formResponse" method="POST">
+    <input type="email" name="entry.1319159829" placeholder="이메일 주소" required>
+    <textarea name="entry.1511543690" placeholder="지금 출시 전 광고 문구를 어떻게 확인하고 계세요? (예: 직접 봄, 디자이너에게 맡김, ChatGPT에 물어봄, 따로 안 함)"></textarea>
+    <input type="hidden" name="entry.1276060779" id="source">
+    <label class="consent"><input type="checkbox" name="entry.1919814174" value="Y" required>
+      <span>[필수] 개인정보 수집·이용 동의 — 항목: 이메일, 응답 내용, 유입 경로 / 목적: 무료 대조 안내, 크몽 상품 오픈 안내, 인터뷰 요청 / 보유: 수집일부터 6개월 또는 철회 요청 시 즉시 삭제. 동의하지 않으시면 신청하실 수 없습니다.</span></label>
+    <button type="submit">상세 1화면 무료 대조 신청하기</button>
+  </form>
+  <div class="thanks" id="thanks">신청 받았습니다. 1영업일 안에 이메일로 상세 1화면을 보내실 방법을 안내드립니다. 지금 광고 문구를 어떻게 확인하고 계신지 15분만 여쭤봐도 될까요? 가능하시면 안내 메일에 "인터뷰 가능"이라고 회신해 주세요.</div>
+  <p class="fine">무료 대조는 선착순 10명, 상세 1화면(이미지 세로 3,000px 이내)입니다. 신청하신 분은 크몽 오픈 후 첫 '상품 5개 일괄' 주문 때 상품 1개를 더 대조해 드립니다(6개, 99,000원 그대로).</p>
+  <a class="btn secondary" id="kmong-link" href="{{KMONG_GIG_URL}}?src=landing" target="_blank" rel="noopener">크몽에서 바로 주문하기</a>
+  <a class="btn secondary" id="sample-link" href="sample.html" target="_blank" rel="noopener">샘플 리포트 보기</a>
+
+  <ul class="benefits">
+    <li><b>지적마다 실제 적발 문구 원문과 출처</b>2026년 6~10월 식약처 부당광고 보도자료 9건에서 뽑은 적발 문구 410건과 대조하고, 문구 원문과 보도자료 날짜·제목을 붙입니다. "왜 위험해 보이는지"를 실제 사례로 확인하세요.</li>
+    <li><b>표현당 바꿔 쓸 문구 2안</b>빨간 줄만 긋고 끝내지 않습니다. 의심 표현마다 대체 문구 2안을 드려 디자이너에게 바로 넘길 수 있습니다.</li>
+    <li><b>상품 5개를 3일 안에</b>신상품 여러 개를 한꺼번에 대조하고, 상품 사이에서 반복되는 표현을 한 장으로 요약합니다.</li>
+  </ul>
+
+  <section class="price">
+    <h2>가격 (크몽에서 결제)</h2>
+    <table>
+      <tr><th>패키지</th><th>범위</th><th>가격</th></tr>
+      <tr><td>맛보기</td><td>상세 1화면, 표현당 적발 사례 1건·대체 문구 1안, 1일</td><td class="amount">9,000원</td></tr>
+      <tr><td>상품 1개</td><td>상세페이지 1개 전체, 대체 문구 2안, 재대조 1회, 2일</td><td class="amount">39,000원</td></tr>
+      <tr><td>상품 5개 일괄</td><td>상세페이지 5개, 반복 표현 요약, 재대조 2회, 3일</td><td class="amount">99,000원</td></tr>
+    </table>
+    <p class="fine" style="margin:12px 0 0">상품 추가 1개당 20,000원(10개 199,000원). 결제·납품은 크몽 안에서만 진행합니다. 크몽 결제 수수료는 크몽 기준을 따릅니다.</p>
+  </section>
+
+  <section>
+    <h2>자주 묻는 질문</h2>
+    <details><summary>ChatGPT에 이미지를 올려 물어보면 되지 않나요?</summary><p>큰 위반 표현은 무료 AI로도 어느 정도 찾을 수 있습니다. 이 리포트는 모든 지적에 식약처가 실제로 적발한 문구 원문과 출처를 붙이고, 바꿔 쓸 문구를 함께 드립니다. 디자이너나 거래처에 "이 표현을 왜 바꿔야 하는지" 근거로 보여 주실 수 있습니다.</p></details>
+    <details><summary>상품 1개에 39,000원, 왜 이 가격인가요?</summary><p>광고 문구 대조만 합니다. 영양성분표·포장 표시사항은 다루지 않습니다. 신상품을 여러 개 내신다면 5개 일괄(상품당 19,800원)이 가장 저렴합니다.</p></details>
+    <details><summary>출시 전 자료라 유출이 걱정됩니다.</summary><p>리포트 작성에만 쓰고 납품 30일 뒤 원본과 추출 텍스트를 삭제합니다. 문구 추출에 외부 AI API를 쓰므로 공개 전 제품명은 가려서 보내 주셔도 됩니다. 동의 없이 샘플이나 포트폴리오로 쓰지 않습니다.</p></details>
+    <details><summary>리포트에서 아무것도 안 나오면 적발되지 않나요?</summary><p>그렇게 약속드릴 수 없습니다. 공개된 적발 사례와 비슷한 표현을 찾는 자료입니다. 공개되지 않은 기준이나 새 단속 유형까지 다루지는 못합니다.</p></details>
+    <details><summary>건강기능식품도 되나요?</summary><p>건강기능식품 광고는 자율심의기구의 사전 심의 대상이라 범위가 아닙니다. 일반식품(차, 젤리, 분말, 기타가공품 등) 상세페이지를 대상으로 합니다.</p></details>
+  </section>
+
+  <div class="disclaimer">
+    <b>꼭 읽어 주세요.</b> 이 리포트는 식품의약품안전처가 공개한 부당광고 적발 사례와 공개 기준을 의뢰 문구와 대조한 정보 제공 자료입니다. 법률 자문이 아니며, 자율심의기구의 심의나 행정기관의 판단을 대신하지 않습니다. 위반 여부의 최종 판단과 문구 사용 결정은 의뢰인 또는 의뢰인이 선임한 전문가(변호사 등)가 합니다. 리포트에 표시되지 않은 표현이 문제가 없다는 뜻은 아닙니다. 이 서비스는 식품의약품안전처와 관계없는 개인 서비스입니다.
+    <br><br>개인정보 문의·삭제 요청: idompolo@gmail.com
+  </div>
+</main>
+<script>
+  // Record the traffic source (?src=cafe etc.) so signups can be attributed per channel.
+  var src = new URLSearchParams(location.search).get('src') || 'direct';
+  document.getElementById('source').value = src;
+
+  // Hide buttons whose link has not been filled in yet (kmong gig before approval, sample report before publish).
+  ['kmong-link', 'sample-link'].forEach(function (id) {
+    var a = document.getElementById(id);
+    if (a.getAttribute('href').indexOf('{' + '{') !== -1) a.style.display = 'none';
+  });
+
+  // Submit via fetch so the visitor stays on the page; fall back to normal POST on failure.
+  // Google Forms does not send CORS headers, so its response is opaque: post with no-cors and treat delivery as success.
+  var form = document.getElementById('signup');
+  var isGoogleForm = form.action.indexOf('docs.google.com/forms') !== -1;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var opts = isGoogleForm
+      ? { method: 'POST', mode: 'no-cors', body: new URLSearchParams(new FormData(form)) }
+      : { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } };
+    fetch(form.action, opts)
+      .then(function (r) {
+        if (!isGoogleForm && !r.ok) throw new Error(r.status);
+        form.style.display = 'none';
+        document.getElementById('thanks').style.display = 'block';
+      })
+      .catch(function () { form.submit(); });
+  });
+</script>
+</body>
+</html>
